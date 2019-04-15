@@ -53,7 +53,7 @@
   "variables": {
     "shortenerUrl": "[concat(parameters('siteName'), '.azurewebsites.net/')]",
     "hostingPlanName": "[concat(parameters('siteName'), '-plan')]",
-    "storageAccountName": "[concat('azfnstore',uniquestring(resourceGroup().id))]",
+    "storageAccountName": "[concat('ShortenStorage', '']",
     "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
   },
   "resources": [
